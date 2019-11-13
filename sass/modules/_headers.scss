@@ -1,0 +1,82 @@
+@import "../modules/vars";
+
+header {
+  background: url(../images/header_desktop.jpg);
+  background-size: cover;
+  background-position: 30% 20%;
+  position: relative;
+}
+
+.nav-item {
+  font-size: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.promo-text {
+  margin-right: auto;
+  margin-top: 20vh;
+  color: $white;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+}
+
+.potrait {
+  bottom: 0;
+  z-index: 0;
+  max-width: 90%;
+}
+
+.shading {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+}
+
+.jumbotron-fluid {
+  padding-bottom: 0;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 200px;
+  }
+  .potrait {
+    position: static;
+    max-width: 50%;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .promo-text {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 80px;
+  }
+}

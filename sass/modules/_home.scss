@@ -1,0 +1,55 @@
+@import "../modules/vars";
+
+.title {
+  h1 {
+    font-size: 30px;
+    color: $yellow;
+    border-left: solid 2px $yellow;
+    padding-left: 10px;
+    font-weight: 300;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.box {
+  width: 125px;
+  height: 125px;
+  background: $yellow;
+}
+
+.info-bg {
+  background: $blue;
+}
+
+.info-text {
+  h2 {
+    color: $yellow;
+    font-size: 30px;
+  }
+  p {
+    color: $white;
+  }
+
+  button {
+    background: none;
+    padding: 15px 40px;
+    border: solid 2px $yellow;
+    border-radius: 5px;
+    color: $yellow;
+
+    &:hover {
+      background: $yellow;
+      color: $white;
+      transition: $transition-time;
+    }
+  }
+}
+
+.info {
+  img {
+    width: 200px;
+  }
+}
