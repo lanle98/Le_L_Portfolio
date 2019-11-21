@@ -1,0 +1,15 @@
+@import "../modules/vars";
+
+.Portfolio {
+  a {
+    color: $blue;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
+h3 {
+  font-size: 20px;
+}

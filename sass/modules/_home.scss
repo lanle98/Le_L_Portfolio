@@ -28,28 +28,75 @@
   h2 {
     color: $yellow;
     font-size: 30px;
+    font-weight: 600;
   }
   p {
     color: $white;
-  }
-
-  button {
-    background: none;
-    padding: 15px 40px;
-    border: solid 2px $yellow;
-    border-radius: 5px;
-    color: $yellow;
-
-    &:hover {
-      background: $yellow;
-      color: $white;
-      transition: $transition-time;
-    }
   }
 }
 
 .info {
   img {
     width: 200px;
+  }
+}
+
+.skill {
+  background: $blue;
+  height: 600px;
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    color: $white;
+    height: 150px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.development {
+  background: $yellow;
+}
+
+.bar {
+  height: 20px;
+
+  h5 {
+    font-size: 15px;
+    color: $white;
+  }
+
+  .percent-wrapper {
+    border: 2px solid $white;
+    position: relative;
+
+    .percent {
+      background: $white;
+      width: 90%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+}
+
+.portfolio-piece {
+  background: $blue;
+  border: 1px solid $white;
+  height: 250px;
+}
+
+@media screen and (min-width: 1024px) {
+  .skill {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .portfolio-piece {
+    height: 350px;
   }
 }

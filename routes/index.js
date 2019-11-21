@@ -6,4 +6,14 @@ router.get("/", (req, res) => {
   res.render("home");
 });
 
+router.get("/about", (req, res) => {
+  console.log("about page");
+  res.render("about");
+});
+
+router.get("/portfolio", (req, res) => {
+  console.log("portfolio page");
+  res.render("portfolio");
+});
+
 module.exports = router;

@@ -1,0 +1,43 @@
+@import "../modules/vars";
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+button {
+  font-family: "Quicksand", sans-serif;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+    list-style-type: none;
+  }
+}
+
+button {
+  background: none;
+  padding: 15px 40px;
+  border: solid 2px $yellow;
+  border-radius: 5px;
+  color: $yellow;
+  outline: none;
+
+  &:hover {
+    background: $yellow;
+    color: $white;
+    transition: $transition-time;
+  }
+}

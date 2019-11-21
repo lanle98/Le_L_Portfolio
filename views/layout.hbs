@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500,600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel='stylesheet' href="css/main.css">
-    <title>Hello World</title>
+    <title>Lan Le</title>
 
 </head>
 
@@ -20,49 +20,74 @@
     <header class="jumbotron jumbotron-fluid">
 
         <nav class="navbar navbar-expand-sm navbar-light">
-            <a class="navbar-brand" href="#"><img class="logo" src="images/logo_grayscale.svg" alt="logo"></a>
+            <a class="navbar-brand" href="/"><img class="logo" src="images/logo_grayscale.svg" alt="logo"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse  justify-content-end" id="collapsibleNavId">
-                <ul class="navbar-nav mt-2">
-                    <li class="nav-item active mx-5">
-                        <a href="#">ABOUT <span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav mt-2 text-center">
+                    <li class="nav-item active ml-5">
+                        <a href="about">ABOUT <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item mx-5">
-                        <a href="#">PORTFOLIO</a>
+                    <li class="nav-item ml-5">
+                        <a href="portfolio">PORTFOLIO</a>
                     </li>
 
                     <li class="nav-item ml-5">
-                        <a href="#">CONTACT</a>
+                        <a href="contact">CONTACT</a>
                     </li>
 
                 </ul>
 
             </div>
         </nav>
-        <div class="container">
-            <div class="row header-wrapper justify-content-center">
-                <img class="col-md-6 potrait img-fluid" src="images/potrait.png" alt="potrait">
-                <div class="shading d-md-none"></div>
-                <div class="col-md-6 d-flex flex-column promo-text text-center text-md-left">
-                    <h5 class="lead">Hi there, my name is Lan Le, I do...</h5>
-                    <a href="#">
-                        <h1>CODING</h1>
-                    </a>
-                    <a href="#">
-                        <h1>DESIGNING</h1>
-                    </a>
-                </div>
+
+
+        {{{body}}}
+
+        <section class="contact-form mt-5 p-5">
+            <div class="container text-center my-5 py-5">
+                <h2 class="text-center my-5 contact-me">CONTACT ME</h2>
+                <form class="d-flex flex-column align-items-center">
+                    <input class="m-2" name="name" placeholder="Name">
+                    <input class="m-2" name="e-mail" placeholder="E-mail">
+                    <textarea style="resize: none;" class="m-2" name="message" placeholder="Message..."></textarea>
+                </form>
+                <button class="mt-5">Send</button>
             </div>
-        </div>
+
+        </section>
+
+        <footer class="pt-5">
+            <div class="w-100 social-media d-flex text-center justify-content-center">
+
+                <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
+                        src="images/social_media_icons/github_icon.svg" alt="github"></a>
+                <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
+                        src="images/social_media_icons/linkedin_icon.svg" alt="github"></a>
+                <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
+                        src="images/social_media_icons/facebook_icon.svg" alt="github"></a>
+                <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
+                        src="images/social_media_icons/instagram_icon.svg" alt="github"></a>
 
 
 
-    </header>
-    {{{body}}}
+            </div>
+
+            <p class="text-center mt-5">Created by Lan Le</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 
 
 </body>
