@@ -4,7 +4,7 @@
   "description": "This is a repo for Le Kien Lan Portfolio",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app"
+    "start": "node app"
   },
   "repository": {
     "type": "git",
