@@ -6,9 +6,9 @@ router.get("/", (req, res) => {
   res.render("home");
 });
 
-router.get("/about", (req, res) => {
+router.post("/about", (req, res) => {
   console.log("about page");
-  res.render("about");
+  res.render("home");
 });
 
 router.get("/portfolio", (req, res) => {
