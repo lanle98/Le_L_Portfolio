@@ -11,6 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel='stylesheet' href="css/main.css">
+    <script src="https://kit.fontawesome.com/07cd3ec3ab.js" crossorigin="anonymous"></script>
     <title>Lan Le</title>
 
 </head>
@@ -28,67 +29,93 @@
             </button>
             <div class="collapse navbar-collapse  justify-content-end" id="collapsibleNavId">
                 <ul class="navbar-nav mt-2 text-center">
-                    <li class="nav-item active ml-5">
-                        <a class="about-link">ABOUT</a>
+                    <li class="nav-item active">
+                        <p class="link">ABOUT</p>
                     </li>
-                    <li class="nav-item ml-5">
-                        <a href="portfolio">PORTFOLIO</a>
+                    <li class="nav-item">
+                        <p class="link">PORTFOLIO</p>
                     </li>
 
-                    <li class="nav-item ml-5">
-                        <a class="contact-link">CONTACT</a>
+                    <li class="nav-item">
+                        <p class="link">CONTACT</p>
                     </li>
 
                 </ul>
 
             </div>
         </nav>
-
-
-        {{{body}}}
-
-        <section class="contact-form mt-5 p-5 Contact">
-            <div class="container text-center my-5 py-5">
-                <h2 class="text-center my-5 contact-me">CONTACT ME</h2>
-                <form class="d-flex flex-column align-items-center">
-                    <input class="m-2" name="name" placeholder="Name">
-                    <input class="m-2" name="e-mail" placeholder="E-mail">
-                    <textarea style="resize: none;" class="m-2" name="message" placeholder="Message..."></textarea>
-                </form>
-                <button class="mt-5">Send</button>
-            </div>
-
-        </section>
-
-        <footer class="pt-5">
-            <div class="w-100 social-media d-flex text-center justify-content-center">
-
-                <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
-                        src="images/social_media_icons/github_icon.svg" alt="github"></a>
-                <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
-                        src="images/social_media_icons/linkedin_icon.svg" alt="github"></a>
-                <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
-                        src="images/social_media_icons/facebook_icon.svg" alt="github"></a>
-                <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
-                        src="images/social_media_icons/instagram_icon.svg" alt="github"></a>
-
-
+        <div class="container">
+            <div class="row header-wrapper justify-content-center">
+                <div class="col-md-6 text-center">
+                    <img class="potrait img-fluid w-100" src="images/potrait_2.png" alt="potrait">
+                </div>
+                <div class="shading d-md-none"></div>
+                <div class="col-md-6 d-flex flex-column promo-text text-center text-md-left m-auto">
+                    <h5 class="lead">Hi there, my name is Lan, I ...</h5>
+                    <a href="#">
+                        <h1>CODE</h1>
+                    </a>
+                    <a href="#">
+                        <h1>DESIGN</h1>
+                    </a>
+                </div>
 
             </div>
+        </div>
 
-            <p class="text-center mt-5">Created by Lan Le</p>
-        </footer>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        <script src="js/scrollTo.js"></script>
+
+    </header>
+
+
+    {{{body}}}
+
+    <section class="contact-form mt-5 p-5 Contact section3">
+        <div class="container text-center my-5 py-5">
+            <h2 class="text-center my-5 contact-me">CONTACT ME</h2>
+            <form class="d-flex flex-column align-items-center">
+                <input class="m-2" name="name" placeholder="Name">
+                <input class="m-2" name="e-mail" placeholder="E-mail">
+                <textarea style="resize: none;" class="m-2" name="message" placeholder="Message..."></textarea>
+            </form>
+            <button class="mt-5">Send</button>
+        </div>
+
+    </section>
+
+    <footer class="pt-5">
+        <div class="w-100 social-media d-flex text-center justify-content-center">
+
+            <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
+                    src="images/social_media_icons/github_icon.svg" alt="github"></a>
+            <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
+                    src="images/social_media_icons/linkedin_icon.svg" alt="github"></a>
+            <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
+                    src="images/social_media_icons/facebook_icon.svg" alt="github"></a>
+            <a class="media p-3 col-md-2" href="#"><img class="img-fluid"
+                    src="images/social_media_icons/instagram_icon.svg" alt="github"></a>
+
+
+
+        </div>
+
+        <p class="text-center mt-5">Created by Lan Le</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.0/ScrollToPlugin.min.js"></script>
+    <script src="js/scrollTo.js"></script>
+    <script src="js/switchButtons.js"></script>
+    <script src="js/main.js"></script>
 
 
 </body>

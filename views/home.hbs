@@ -1,35 +1,11 @@
-<div class="container">
-    <div class="row header-wrapper justify-content-center">
-        <div class="col-md-6 text-center">
-            <img class="potrait img-fluid w-100" src="images/potrait_2.png" alt="potrait">
-        </div>
-        <div class="shading d-md-none"></div>
-        <div class="col-md-6 d-flex flex-column promo-text text-center text-md-left m-auto">
-            <h5 class="lead">Hi there, my name is Lan, I ...</h5>
-            <a href="#">
-                <h1>CODE</h1>
-            </a>
-            <a href="#">
-                <h1>DESIGN</h1>
-            </a>
-        </div>
-
-    </div>
-</div>
-
-
-
-</header>
-
-
 <main>
 
 
-    <section class="About">
+    <section class="About section1">
         <div class="container">
             <div class="title about-me">
-                <a href="#"></a>
-                <h1><span>ABOUT</span> ME</h1>
+                <a href="#">
+                    <h1><span>ABOUT</span> ME</h1>
                 </a>
             </div>
             <div class="my-offers row my-5">
@@ -54,7 +30,7 @@
                 </div>
                 <div class="info-text">
                     <h2 class="my-4">My full name is Le Kien Lan, I am a Vietnamese guy...</h2>
-                    <p>Born and raised in Ho Chi Minh City, Vietnam. I decided to go to Canada in
+                    <p>After finshing my first year in univeristy, I decided to go to Canada in
                         order to study and
                         develop my career in the future. I started the Interactive Media Design course at Fanshawe
                         College, London and wanted to become a designer. However, since my course is both about design
@@ -104,6 +80,13 @@
                                 <span class="percent" style="width:85%"></span>
                             </span>
                         </div>
+
+                        <div class="bar w-100 mb-4 d-flex justify-content-between">
+                            <h5 class="w-25">NodeJS</h5>
+                            <span class="mx-1 w-75 percent-wrapper">
+                                <span class="percent" style="width:75%"></span>
+                            </span>
+                        </div>
                         <div class="bar w-100 mb-4 d-flex justify-content-between">
                             <h5 class="w-25">PHP</h5>
                             <span class="mx-1 w-75 percent-wrapper">
@@ -117,7 +100,7 @@
                             </span>
                         </div>
                         <div class="bar w-100 mb-4 d-flex justify-content-between">
-                            <h5 class="w-25">SQL</h5>
+                            <h5 class="w-25">SQL/MySQL</h5>
                             <span class="mx-1 w-75 percent-wrapper">
                                 <span class="percent" style="width:75%"></span>
                             </span>
@@ -135,7 +118,7 @@
                     <div class="skill-detail">
                         <div class="bar w-100 mb-4 d-flex justify-content-between">
                             <h5 class="w-25">Photoshop</h5>
-                            <span class="mx-1 w-75 percent-wrapper">
+                            <span class="w-75 percent-wrapper">
                                 <span class="percent" style="width:95%"></span>
                             </span>
                         </div>
@@ -177,33 +160,35 @@
 
     </section>
 
-    <section class="Portfolio">
+    <section class="Portfolio section2">
         <div class="container">
-            <div class="title my-skills my-5">
+            <div class="title my-skills mt-5">
                 <a href="#">
-                    <h1>FEATURED<span> PORTFOLIO</span></h1>
+                    <h1>MY<span> WORKS</span></h1>
                 </a>
+            </div>
+            <div class="row justify-content-between py-3 portfolio-nav m-3">
+                <div class="switch"></div>
+                <a href="/" class="text-center col-md-4 portfolio-filter">ALL</a>
+                <a href="development" class="text-center col-md-4 portfolio-filter">DEVELOPMENTS</a>
+                <a href="design" class="text-center col-md-4 portfolio-filter">DESIGNS</a>
+
             </div>
             <div class="portfolio text-center">
                 <div class="row">
-                    <div class="col-md-4 portfolio-piece">
+                    {{#each project}}
+                    <a href="portfolio/{{ID}}" class="portfolio-piece d-flex align-items-center justify-content-center"
+                        style="background-image: url(../{{thumbnail}});">
 
-                    </div>
-                    <div class="col-md-8 portfolio-piece">
+                        <h4>{{name}}</h4>
+                        <div class="overlay"></div>
+                    </a>
 
-                    </div>
 
-
-                    <div class="col-md-8 portfolio-piece">
-
-                    </div>
-                    <div class="col-md-4 portfolio-piece">
-
-                    </div>
+                    {{/each}}
+                    {{!-- </div> <button class="mt-5">See more</button> --}}
                 </div>
-                <button class="mt-5">See more</button>
             </div>
-        </div>
     </section>
 
 

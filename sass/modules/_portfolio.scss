@@ -8,8 +8,49 @@
       color: $yellow;
     }
   }
+
+  h3 {
+    font-size: 20px;
+    color: $yellow;
+    transition: 0.5s;
+  }
 }
 
-h3 {
-  font-size: 20px;
+.portfolio-nav {
+  position: relative;
+}
+
+.switch {
+  background: $yellow;
+  position: absolute;
+  height: 100%;
+  width: 33.33%;
+  top: 0;
+  transition: 0.5s;
+  left: 0;
+}
+
+.portfolio-page {
+  a {
+    color: $blue;
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  li,
+  h5 {
+    color: $yellow;
+  }
+}
+
+.portfolio-piece-name {
+  color: $yellow;
+  border-bottom: $yellow 2px solid;
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio-piece {
+    height: 350px;
+  }
 }
