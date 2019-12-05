@@ -169,18 +169,19 @@
             </div>
             <div class="row justify-content-between py-3 portfolio-nav m-3">
                 <div class="switch"></div>
-                <a href="/" class="text-center col-md-4 portfolio-filter">ALL</a>
-                <a href="development" class="text-center col-md-4 portfolio-filter">DEVELOPMENTS</a>
-                <a href="design" class="text-center col-md-4 portfolio-filter">DESIGNS</a>
+                <h5 style="color:white" class="text-center col-md-4 portfolio-filter">ALL</h5>
+                <h5 class="text-center col-md-4 portfolio-filter">DEVELOPMENTS</h5>
+                <h5 class="text-center col-md-4 portfolio-filter">DESIGNS</h5>
 
             </div>
             <div class="portfolio text-center">
                 <div class="row">
                     {{#each project}}
-                    <a href="portfolio/{{ID}}" class="portfolio-piece d-flex align-items-center justify-content-center"
+                    <a href="{{ID}}"
+                        class="portfolio-piece d-flex align-items-center shadow justify-content-center col-md-6 {{field_name}}"
                         style="background-image: url(../{{thumbnail}});">
 
-                        <h4>{{name}}</h4>
+                        <h4 class=" display-4">{{name}}</h4>
                         <div class="overlay"></div>
                     </a>
 
@@ -190,6 +191,90 @@
                 </div>
             </div>
     </section>
+
+
+    <div class="modal" id="exampleModalCenter">
+        <div class="fade-bg  close-lightbox"></div>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content container p-0">
+                <span class="close-lightbox close-btn">&times</span>
+                <section class="portfolio-page">
+                    <h1 class="hidden">Description</h1>
+                    <div class="header">
+
+                    </div>
+
+
+                    <div class="container portfolio-content row">
+                        <div class="col-12 row justify-content-between">
+                            <div class="col-lg-7">
+                                <h2 class="display-3 pb-3 mb-3 portfolio-piece-name"></h2>
+                                <a href="" class="link" target="_blank"></a>
+                                <p class="my-3 promo-text"></p>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <img class="img-fluid  img-1" src="images/portfolio_piece/critterspraygun/header.jpg"
+                                    alt="header">
+                            </div>
+                        </div>
+
+
+
+                        <p class="col-md-8 text-center mx-auto my-5 para-1">
+                        </p>
+                        <div class="img-2 col-12">
+                            <img class="img-fluid" src="images/portfolio_piece/critterspraygun/header.jpg" alt="header">
+                        </div>
+
+
+
+                        <p class="col-md-8 text-center mx-auto my-5 para-2"></p>
+
+
+                        <div class="img-3 col-12">
+                            <img class="img-fluid" src="images/portfolio_piece/critterspraygun/header.jpg" alt="header">
+                        </div>
+
+
+                        <p class="col-md-8 text-center mx-auto my-5 para-3"></p>
+
+                        <div class="tools w-100">
+                            <h5 class="text-center my-5 display-3">TOOLS</h5>
+                            <div class="tools-icons row justify-content-around">
+                                <div class=" col-md-2 col-4 m-1 text-center">
+                                    <i class="fab fa-3x fa-html5"></i>
+                                    <h6 class="my-1">HTML</h6>
+                                </div>
+                                <div class=" col-md-2 col-4 m-1 text-center">
+                                    <i class="fab fa-3x fa-css3-alt"></i>
+                                    <h6 class="my-1">CSS</h6>
+                                </div>
+                                <div class=" col-md-2 col-4 m-1 text-center">
+                                    <i class="fab fa-3x fa-js"></i>
+                                    <h6 class="my-1">JavaScript</h6>
+                                </div>
+                                <div class=" col-md-2 col-4 m-1 text-center">
+                                    <i class="fab fa-3x fa-sketch"></i>
+                                    <h6 class="my-1">Sketch</h6>
+                                </div>
+                                <div class=" col-md-2 col-4 m-1 text-center">
+                                    <i class="fab fa-3x fa-node-js"></i>
+                                    <h6 class="my-1">NodeJS</h6>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                </section>
+
+            </div>
+        </div>
+
+
 
 
 </main>

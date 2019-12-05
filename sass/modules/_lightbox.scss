@@ -1,0 +1,85 @@
+@import "../modules/vars";
+
+.portfolio-content {
+  p {
+    color: $grey;
+    position: static;
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+.fade-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+
+.modal-content {
+  overflow-y: scroll;
+  height: 90vh;
+  animation: popup 0.5s;
+  overflow-x: none;
+}
+
+@keyframes popup {
+  from {
+    height: 0;
+  }
+  to {
+    height: 90vh;
+  }
+}
+
+.close-btn {
+  position: fixed;
+  font-size: 3em;
+  right: 0;
+  top: 0;
+  padding-right: 20px;
+  cursor: pointer;
+  color: $yellow;
+
+  &:active {
+    color: $blue;
+  }
+}
+
+.portfolio-content {
+  margin: 60px auto;
+}
+
+.portfolio-piece-name {
+  color: $yellow;
+  border-bottom: $yellow 2px solid;
+}
+
+.header {
+  width: 100%;
+  height: 40vw;
+  object-fit: cover;
+  max-height: 500px;
+
+  img,
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.img-1 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-dialog {
+    max-width: 80vw;
+  }
+}
