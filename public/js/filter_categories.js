@@ -24,7 +24,7 @@
 
       //add animation
       portfolioPiece.forEach(piece => {
-        gsap.fromTo(piece, 0.5, { opacity: 0 }, { opacity: 1 });
+        gsap.fromTo(piece, 1, { opacity: 0 }, { opacity: 1 });
       });
     })
   );
