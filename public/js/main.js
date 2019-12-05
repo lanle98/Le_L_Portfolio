@@ -1,9 +1,22 @@
 (() => {
   let portfolioPiece = document.querySelectorAll(".portfolio-piece"),
-    portfolioFilter = document.querySelectorAll(".portfolio-filter");
+    modal = document.querySelector(".modal"),
+    modalContent = document.querySelector(".modal-content"),
+    closeLightbox = document.querySelectorAll(".close-lightbox"),
+    portfolioPage = document.querySelector(".portfolio-page"),
+    portfolioHeader = portfolioPage.querySelector(".header"),
+    portfolioName = portfolioPage.querySelector(".portfolio-piece-name"),
+    link = portfolioPage.querySelector(".link"),
+    promoText = portfolioPage.querySelector(".promo-text"),
+    paragraph1 = portfolioPage.querySelector(".para-1"),
+    pargraph2 = portfolioPage.querySelector(".para-2"),
+    pargraph3 = portfolioPage.querySelector(".para-3"),
+    img1 = portfolioPage.querySelector(".img-1");
 
-  function getData() {
-    let url = `/${this.getAttribute("href")}`;
+  //fetching data AJAX
+  function getData(e) {
+    e.preventDefault();
+    let url = `portfolio/${this.getAttribute("href")}`;
     console.log(url);
     fetch(url)
       .then(res => {
@@ -11,17 +24,33 @@
       })
       .then(data => {
         console.log(data);
+        parseData(data);
+      })
+      .catch(err => {
+        // Do something for an error here
+        console.log("Error Reading data " + err);
       });
+
+    modal.classList.add("show");
   }
 
-  //generate dynamic box sizes
-  for (let i = 0; i < portfolioPiece.length; i++) {
-    if (i == 0 || i == 3 || i == 4 || i == 7 || i == 8 || i == 10) {
-      portfolioPiece[i].classList.add("col-md-4");
-    } else {
-      portfolioPiece[i].classList.add("col-md-8");
-    }
+  //add data into DOM
+  function parseData(content) {
+    portfolioHeader.innerHTML = content.header;
+    portfolioName.innerHTML = content.name;
+    link.innerHTML = content.link;
+    promoText.innerHTML = content.promo_text;
+    img1.src = content.thumbnail;
+    paragraph1.innerHTML = content.paragraph_1;
   }
 
-  portfolioFilter.forEach(filter => filter.addEventListener("click", getData));
+  //event listener for portfolio piece
+  portfolioPiece.forEach(e => e.addEventListener("click", getData));
+
+  //close lightbox function
+  closeLightbox.forEach(close => {
+    close.addEventListener("click", function() {
+      modal.classList.remove("show");
+    });
+  });
 })();

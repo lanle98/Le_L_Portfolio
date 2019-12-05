@@ -4,14 +4,7 @@ const mysql = require("../utils/sql");
 
 router.get("/", (req, res) => {
   console.log("main route");
-  query = "select * from tbl_projects";
-  mysql.query(query, (err, result) => {
-    res.render("home", { project: result });
-  });
-});
 
-router.get("/:field", (req, res) => {
-  console.log("filter");
   query = `SELECT
   project.*,
   f.field_name AS field_name
@@ -21,16 +14,9 @@ LEFT JOIN tbl_link_fields link ON
   project.projects_id = link.proj_id
 LEFT JOIN tbl_fields f ON
   link.fields_id = f.field_id
-  where field_name = '${req.params.field}';`;
-
+  order by RAND();`;
   mysql.query(query, (err, result) => {
-    if (err) {
-      throw err;
-      console.log(err);
-    }
-
-    console.log(result);
-    res.json({ project: result });
+    res.render("home", { project: result });
   });
 });
 
