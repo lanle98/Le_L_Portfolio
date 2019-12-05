@@ -1,5 +1,5 @@
 const config = {
-  host: "cleardb.net",
+  host: "us-cdbr-iron-east-05.cleardb.net",
   port: 8889,
   uname: "b619a1c743fb12",
   pword: "6bd2c705",
