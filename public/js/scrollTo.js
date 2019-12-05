@@ -11,4 +11,15 @@
       });
     });
   });
+
+  document.querySelector(".go-to-top").addEventListener("click", function() {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: {
+        y: "header",
+        offsetY: 70
+      },
+      ease: Circ.easeOut
+    });
+  });
 })();
