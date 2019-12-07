@@ -9,8 +9,8 @@
     link = portfolioPage.querySelector(".link"),
     promoText = portfolioPage.querySelector(".promo-text"),
     paragraph1 = portfolioPage.querySelector(".para-1"),
-    pargraph2 = portfolioPage.querySelector(".para-2"),
-    pargraph3 = portfolioPage.querySelector(".para-3"),
+    paragraph2 = portfolioPage.querySelector(".para-2"),
+    paragraph3 = portfolioPage.querySelector(".para-3"),
     img1 = portfolioPage.querySelector(".img-1");
 
   //fetching data AJAX
@@ -42,6 +42,7 @@
     promoText.innerHTML = content.promo_text;
     img1.src = content.thumbnail;
     paragraph1.innerHTML = content.paragraph_1;
+    paragraph2.innerHTML = content.paragraph_2;
   }
 
   //event listener for portfolio piece
