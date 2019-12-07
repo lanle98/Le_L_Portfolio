@@ -39,6 +39,7 @@
     portfolioHeader.innerHTML = content.header;
     portfolioName.innerHTML = content.name;
     link.innerHTML = content.link;
+    link.href = content.link;
     promoText.innerHTML = content.promo_text;
     img1.src = content.thumbnail;
     paragraph1.innerHTML = content.paragraph_1;
