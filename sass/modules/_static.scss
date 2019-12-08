@@ -8,6 +8,10 @@ header {
   z-index: 2;
 }
 
+li {
+  margin-right: 30px;
+}
+
 .navbar-toggler {
   border: none;
 }
@@ -84,7 +88,7 @@ h5 {
   flex-direction: column;
   justify-content: center;
 
-  h2 {
+  h3 {
     font-size: 30px;
   }
 
@@ -144,10 +148,6 @@ footer {
     position: static;
   }
 
-  li {
-    margin-right: 30px;
-  }
-
   h1 {
     font-size: 80px;
   }
@@ -157,7 +157,7 @@ footer {
   }
 
   .contact-form {
-    h2 {
+    h3 {
       font-size: 60px;
     }
   }

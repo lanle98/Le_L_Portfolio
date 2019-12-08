@@ -1,0 +1,12 @@
+@import "../modules/vars";
+
+.error {
+  background: $blue;
+  color: $white;
+}
+
+.status {
+  font-size: 200px;
+  font-weight: 600;
+  color: $yellow;
+}
