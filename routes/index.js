@@ -31,6 +31,10 @@ router.get("/portfolio/:id", (req, res) => {
       console.log(err);
     }
 
+    result[0].link = result[0].link.split(",").map(item => {
+      return item;
+    });
+
     console.log(result);
     res.json(result[0]);
   });
