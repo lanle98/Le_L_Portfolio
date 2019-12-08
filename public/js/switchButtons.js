@@ -12,8 +12,11 @@
       let mq = window.matchMedia("(min-width: 768px)");
 
       function switchBtn(tabletViewPort) {
+        console.log("active");
+        filter.style.color = "white";
         if (tabletViewPort.matches) {
-          filter.style.color = "white";
+          btnSwitch.style.top = 0;
+
           if (index == 0) {
             btnSwitch.style.left = "0";
           } else if (index == 1) {
@@ -22,7 +25,14 @@
             btnSwitch.style.left = "66.66%";
           }
         } else {
-          // btnSwitch.syle.background = "black";
+          btnSwitch.style.left = 0;
+          if (index == 0) {
+            btnSwitch.style.top = "0";
+          } else if (index == 1) {
+            btnSwitch.style.top = "33.33%";
+          } else if (index == 2) {
+            btnSwitch.style.top = "66.66%";
+          }
         }
       }
 
