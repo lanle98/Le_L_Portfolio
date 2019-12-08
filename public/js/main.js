@@ -11,7 +11,9 @@
     paragraph1 = portfolioPage.querySelector(".para-1"),
     paragraph2 = portfolioPage.querySelector(".para-2"),
     paragraph3 = portfolioPage.querySelector(".para-3"),
-    img1 = portfolioPage.querySelector(".img-1");
+    img1 = portfolioPage.querySelector(".img-1"),
+    img2 = portfolioPage.querySelector(".img-2"),
+    img3 = portfolioPage.querySelector(".img-3");
 
   //fetching data AJAX
   function getData(e) {
@@ -39,8 +41,11 @@
     portfolioHeader.innerHTML = content.header;
     portfolioName.innerHTML = content.name;
     link.innerHTML = content.link;
+    link.href = content.link;
     promoText.innerHTML = content.promo_text;
     img1.src = content.thumbnail;
+    img2.src = content.image_2;
+    img3.src = content.image_3;
     paragraph1.innerHTML = content.paragraph_1;
     paragraph2.innerHTML = content.paragraph_2;
   }
