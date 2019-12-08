@@ -53,6 +53,13 @@
   margin: 60px auto;
 }
 
+.link {
+  font-size: 15px;
+  text-decoration: underline;
+  list-style-type: square;
+  color: $yellow !important;
+}
+
 .portfolio-piece-name {
   color: $yellow;
   border-bottom: $yellow 2px solid;
