@@ -12,7 +12,7 @@ const connect = sql.createConnection({
 var connection;
 
 function handleDisconnect() {
-  connection = sql.createConnection(config); // Recreate the connection, since
+  connection = sql.createConnection(connect); // Recreate the connection, since
   // the old one cannot be reused.
 
   connection.connect(function(err) {
