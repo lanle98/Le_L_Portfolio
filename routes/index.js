@@ -16,6 +16,11 @@ LEFT JOIN tbl_fields f ON
   link.fields_id = f.field_id
   order by RAND();`;
   mysql.query(query, (err, result) => {
+    connection.release();
+
+    if (err) {
+      return console.log(err.message);
+    }
     res.render("home", { project: result });
   });
 });
