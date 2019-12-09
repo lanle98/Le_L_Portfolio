@@ -54,7 +54,7 @@
     return `${link
       .map(
         item =>
-          `<li><a target="_blank"   class="link" href=${item}>Link to project</a></li>`
+          `<li><a target="_blank"   class="portfolio-link" href=${item}>Link to project</a></li>`
       )
       .join("")}`;
   }
