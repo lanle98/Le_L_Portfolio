@@ -7,7 +7,7 @@ const connect = sql.createPool({
   user: config.uname,
   password: config.pword,
   database: config.database,
-  connectionLimit: 20,
+  connectionLimit: 10,
   queueLimit: 100,
   waitForConnections: true
 });
