@@ -3,32 +3,21 @@ const router = express.Router();
 const mysql = require("../utils/sql");
 
 router.get("/", (req, res) => {
-  mysql.getConnection((err, connection) => {
-    if (err) {
-      return console.log(error.message);
-    }
+  console.log("main route");
 
-    console.log("main route");
+  let query = `SELECT
+    project.*,
+    f.field_name AS field_name
+    FROM
+    tbl_projects project
+    LEFT JOIN tbl_link_fields link ON
+    project.projects_id = link.proj_id
+    LEFT JOIN tbl_fields f ON
+    link.fields_id = f.field_id
+    order by RAND();`;
 
-    query = `SELECT
-  project.*,
-  f.field_name AS field_name
-FROM
-  tbl_projects project
-LEFT JOIN tbl_link_fields link ON
-  project.projects_id = link.proj_id
-LEFT JOIN tbl_fields f ON
-  link.fields_id = f.field_id
-  order by RAND();`;
-
-    mysql.query(query, (err, result) => {
-      connection.release();
-
-      if (err) {
-        return console.log(err.message);
-      }
-      res.render("home", { project: result });
-    });
+  mysql.query(query, (err, result) => {
+    res.render("home", { project: result });
   });
 });
 
