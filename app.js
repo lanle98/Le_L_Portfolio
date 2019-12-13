@@ -47,8 +47,8 @@ app.post("/send", (req, res) => {
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: "postmaster@sandbox4201e58a5b614361a433036cc7a4dba0.mailgun.org", // generated ethereal user
-        pass: "a5e366766e9f646dffdd1b982a3aa2e9-5645b1f9-f2137827" // generated ethereal password
+        user: "postmaster@sandboxc3eb121021e14f72a54a61daabb1b44b.mailgun.org", // generated ethereal user
+        pass: "640617132b02b93ba439e175d0a62f1b-5645b1f9-6c64a4c0" // generated ethereal password
       }
     });
 
