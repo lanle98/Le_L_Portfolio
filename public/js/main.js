@@ -13,7 +13,13 @@
     paragraph3 = portfolioPage.querySelector(".para-3"),
     img1 = portfolioPage.querySelector(".img-1"),
     img2 = portfolioPage.querySelector(".img-2"),
-    img3 = portfolioPage.querySelector(".img-3");
+    img3 = portfolioPage.querySelector(".img-3"),
+    form = document.querySelector("form");
+
+  //prevent resending message
+  // form.submit(e => {
+  //   e.preventDefault();
+  // });
 
   //fetching data AJAX
   function getData(e) {

@@ -37,7 +37,7 @@
 
 .close-btn {
   position: fixed;
-  font-size: 3em;
+  font-size: 35px;
   right: 0;
   top: -10px;
   padding-right: 20px;
@@ -51,6 +51,11 @@
 
 .portfolio-content {
   margin: 60px auto;
+
+  .promo-text {
+    font-size: 24px;
+    font-weight: 300;
+  }
 }
 
 .portfolio-link {
@@ -63,6 +68,7 @@
 .portfolio-piece-name {
   color: $yellow;
   border-bottom: $yellow 2px solid;
+  font-size: 40px;
 }
 
 .header {
@@ -86,5 +92,9 @@
 @media screen and (min-width: 1024px) {
   .modal-dialog {
     max-width: 80vw;
+  }
+
+  .portfolio-piece-name {
+    font-size: 60px;
   }
 }

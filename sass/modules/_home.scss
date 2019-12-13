@@ -82,6 +82,11 @@
   .percent-wrapper {
     border: 2px solid $white;
     position: relative;
+    width: 60%;
+
+    .skill-title {
+      width: 30%;
+    }
 
     .percent {
       background: $white;
@@ -141,6 +146,10 @@
     h1 {
       font-size: 40px;
     }
+  }
+
+  .bar .percent-wrapper {
+    width: 75%;
   }
 
   .portfolio-piece {
