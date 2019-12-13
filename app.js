@@ -43,19 +43,21 @@ app.post("/send", (req, res) => {
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-      host: "smtp.mailgun.org",
+      host: "smtp.gmail.com",
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: "postmaster@sandboxc3eb121021e14f72a54a61daabb1b44b.mailgun.org", // generated ethereal user
-        pass: "640617132b02b93ba439e175d0a62f1b-5645b1f9-6c64a4c0" // generated ethereal password
+        user: "lekienlan98@gmail.com", // generated ethereal user
+        pass: "wctfkkjiavhxpsvz" // generated ethereal password
+      },
+      tls: {
+        rejectUnauthorized: false
       }
     });
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from:
-        '"Nodemailer Contact" <postmaster@sandbox4201e58a5b614361a433036cc7a4dba0.mailgun.org>', // sender address
+      from: '"Nodemailer Contact" <lekienlan98@gmail.com>', // sender address
       to: "darrenle98@gmail.com", // list of receivers
       subject: "No Contact Request", // Subject line
       text: "Hello world?", // plain text body
@@ -67,14 +69,14 @@ app.post("/send", (req, res) => {
 
     // Preview only available when sending through an Ethereal account
     console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+
+    res.render("submission", {
+      message: "Thank you for contacting me",
+      layout: "submissionPage"
+    });
   }
   // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
   main().catch(console.error);
-
-  res.render("submission", {
-    message: "Thank you for contacting me",
-    layout: "submissionPage"
-  });
 });
 
 app.use((req, res, next) => {
