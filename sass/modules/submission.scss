@@ -1,0 +1,15 @@
+@import "../modules/vars";
+
+.go-back {
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.submission {
+  background: $blue;
+  color: $white;
+  p {
+    font-size: 25px;
+  }
+}

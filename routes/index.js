@@ -3,9 +3,13 @@ const router = express.Router();
 const mysql = require("../utils/sql");
 
 router.get("/", (req, res) => {
-  console.log("main route");
+  mysql.getConnection((err, connection) => {
+    if (err) {
+      return console.log(error.message);
+    }
 
-  let query = `SELECT
+    console.log("main route");
+    let query = `SELECT
     project.*,
     f.field_name AS field_name
     FROM
@@ -16,8 +20,10 @@ router.get("/", (req, res) => {
     link.fields_id = f.field_id
     order by RAND();`;
 
-  mysql.query(query, (err, result) => {
-    res.render("home", { project: result });
+    mysql.query(query, (err, result) => {
+      connection.release();
+      res.render("home", { project: result });
+    });
   });
 });
 
