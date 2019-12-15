@@ -14,7 +14,9 @@
     img1 = portfolioPage.querySelector(".img-1"),
     img2 = portfolioPage.querySelector(".img-2"),
     img3 = portfolioPage.querySelector(".img-3"),
-    form = document.querySelector("form");
+    tool = portfolioPage.querySelector(".tools-icons"),
+    toolName = portfolioPage.querySelector(".tool-name");
+  form = document.querySelector("form");
 
   //prevent resending message
   // form.submit(e => {
@@ -46,7 +48,7 @@
   function parseData(content) {
     portfolioHeader.innerHTML = content.header;
     portfolioName.innerHTML = content.name;
-    link.innerHTML = `${renderLink(content.link)}`;
+    link.innerHTML = `${splitLink(content.link)}`;
     // link.href = content.link;
     promoText.innerHTML = content.promo_text;
     img1.src = content.thumbnail;
@@ -54,9 +56,22 @@
     img3.src = content.image_3;
     paragraph1.innerHTML = content.paragraph_1;
     paragraph2.innerHTML = content.paragraph_2;
+    tool.innerHTML = `${splitTool(content.tool_name, content.tool_icon)}`;
   }
 
-  function renderLink(link) {
+  function splitTool(tool, icon) {
+    return tool
+      .map(
+        (tool, index) =>
+          `<div class="tool col-5 col-md-4 col-lg-3 my-3 text-center">
+              <img src='images/tool_icons/${icon[index]}' class="tool-icon" style="width:50px"></img>
+              <p class="my-1 tool-name">${tool}</p>
+          </div> `
+      )
+      .join("");
+  }
+
+  function splitLink(link) {
     return `${link
       .map(
         item =>

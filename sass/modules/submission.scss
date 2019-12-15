@@ -2,8 +2,13 @@
 
 .go-back {
   &:hover {
-    color: $yellow;
+    color: $white;
   }
+
+  color: $yellow;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: 300;
 }
 
 .submission {
