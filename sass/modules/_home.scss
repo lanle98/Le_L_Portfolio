@@ -15,6 +15,7 @@
 }
 
 .box {
+  opacity: 0;
   img {
     width: 50%;
   }
@@ -83,6 +84,7 @@
     border: 2px solid $white;
     position: relative;
     width: 60%;
+    overflow: hidden;
 
     .skill-title {
       width: 30%;
@@ -93,6 +95,7 @@
       width: 90%;
       height: 100%;
       position: absolute;
+      opacity: 0;
     }
   }
 }
@@ -109,7 +112,8 @@
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  transition: 0.5s;
+  opacity: 0;
+  // transition: 0.5s;
 
   h4 {
     opacity: 0;
