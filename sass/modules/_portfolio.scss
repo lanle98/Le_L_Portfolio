@@ -28,6 +28,10 @@
   position: relative;
 }
 
+.portfolio-piece {
+  opacity: 0;
+}
+
 .portfolio-page {
   a {
     color: $blue;
