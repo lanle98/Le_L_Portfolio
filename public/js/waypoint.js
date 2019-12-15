@@ -51,14 +51,14 @@
       handler: function(direction) {
         gsap.fromTo(
           project,
-          random(2, 4),
+          random(4, 6),
 
           { scale: 0, opacity: 0 },
           { scale: 1, opacity: 1, ease: Elastic.easeOut }
         );
         this.destroy();
       },
-      offset: "60%"
+      offset: "40%"
     });
   });
 })();
