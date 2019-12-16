@@ -5,7 +5,7 @@ Lan Le Portfolio
 
 
 Build with
-----------------------------------
+============
 
 ### Design
 - Adobe Photoshop
@@ -26,13 +26,13 @@ Build with
 * Terminal
 * GitHub
 
-Viewing The Portfolio
-----------------------
+Viewing online
+=====================
 
-* Visit [https://www.lekienlan.com/] to view my portfolo
+* Visit [https://www.lekienlan.com/] to view online
 
 Viewing locally
-============
+================
 
 ### Prerequisites
 * Install NodeJS from [https://nodejs.org/en/]
