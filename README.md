@@ -31,14 +31,18 @@ Build with
 Viewing The Portfolio
 ----------------------
 
-* Visit https://www.lekienlan.com/ to view my portfolo
+* Visit [https://www.lekienlan.com/] to view my portfolo
 
 Viewing locally
 ============
 
+## Prerequisites
+* Install NodeJS from [https://nodejs.org/en/]
+* Install MAMP/WAMP from [https://www.mamp.info/en/]
+
 ## Getting started
 * Clone the Repo ```git clone```
-* Install NODE ``` npm install```
+* Install NodeJS packages by typing ``` npm install``` in terminal
 * Open MAMP/WAMP
 * Go to MyPhpAdmin```-> create new database```
 * Import the database inside Database folder
