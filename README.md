@@ -34,11 +34,11 @@ Viewing The Portfolio
 Viewing locally
 ============
 
-## Prerequisites
+### Prerequisites
 * Install NodeJS from [https://nodejs.org/en/]
 * Install MAMP/WAMP from [https://www.mamp.info/en/]
 
-## Getting started
+### Getting started
 * Clone the Repo ```git clone```
 * Install NodeJS packages by typing ``` npm install``` in terminal
 * Open MAMP/WAMP
