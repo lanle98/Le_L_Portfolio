@@ -1,7 +1,7 @@
 Lan Le Portfolio
 ================
 
-<img src="public/images/logo_color.svg" alt="logo">
+<img src="public/images/logo_color.svg" alt="logo" width="200px">
 
 
 Build with
