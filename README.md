@@ -1,7 +1,7 @@
 Lan Le Portfolio
 ================
 
-<img src="public/images/logo_color.svg" alt="logo" width="200px">
+<img src="public/images/logo_color.svg" alt="logo" width="500px">
 
 
 Build with
@@ -23,6 +23,11 @@ Build with
 - GSAP
 - SQL/MySQL
 
+### Workspace
+* Visual Studio Code
+* Terminal
+* GitHub
+
 Viewing The Portfolio
 ----------------------
 
@@ -39,4 +44,5 @@ Viewing locally
 * Import the database inside Database folder
 * In the Terminal run ``` npm start```
 * In the Browser go ``` localhost:4000```
+
 
