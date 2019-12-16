@@ -51,10 +51,10 @@
       handler: function(direction) {
         gsap.fromTo(
           project,
-          random(4, 6),
+          random(2, 4),
 
           { scale: 0, opacity: 0 },
-          { scale: 1, opacity: 1, ease: Elastic.easeOut }
+          { scale: 1, opacity: 1, ease: Bounce.easeOut }
         );
         this.destroy();
       },
