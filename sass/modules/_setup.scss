@@ -36,21 +36,6 @@ a {
   }
 }
 
-button {
-  background: none;
-  padding: 15px 40px;
-  border: solid 2px $blue;
-  border-radius: 5px;
-  color: $blue;
-  outline: none;
-
-  &:hover {
-    background: $blue;
-    color: $white;
-    transition: $transition-time;
-  }
-}
-
 .waypoint {
   opacity: 0;
 }

@@ -8,10 +8,6 @@ header {
   z-index: 2;
 }
 
-li {
-  margin-right: 30px;
-}
-
 .navbar-toggler {
   border: none;
 }
@@ -152,6 +148,10 @@ footer {
   }
   .potrait {
     position: static;
+  }
+
+  li {
+    margin-right: 30px;
   }
 
   h1 {
