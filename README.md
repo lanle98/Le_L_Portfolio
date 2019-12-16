@@ -14,13 +14,11 @@ Build with
 
 ### Development
 - HTML/CSS
+- SASS
 - Bootstrap 4
-- Javascript
-- GulpJS
-- NodeJS
-- Nodemailer
+- Javascript ( GSAP, GulpJS )
+- NodeJS ( ExpressJS, Nodemailer )
 - Heroku
-- GSAP
 - SQL/MySQL
 
 ### Workspace
