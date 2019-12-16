@@ -1,18 +1,18 @@
 Lan Le Portfolio
 ================
 
-![alt text](http://url/images/public/logo_color.svg)
+![alt text](./images/public/logo_color.svg)
 
 
 Build with
 ----------------------------------
 
-###Design
+### Design
 - Adobe Photoshop
 - Adobe Illustrator
 - Adobe XD
 
-###Development
+### Development
 - HTML/CSS
 - Bootstrap 4
 - Javascript
