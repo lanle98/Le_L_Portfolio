@@ -1,7 +1,7 @@
 Lan Le Portfolio
 ================
 
-<img src="images/public/logo_color.svg" alt="logo">
+<img src="public/images/logo_color.svg" alt="logo">
 
 
 Build with
@@ -31,5 +31,12 @@ Viewing The Portfolio
 Viewing locally
 ============
 
-This is a standard Rails 4 application.
+## Getting started
+* Clone the Repo ```git clone```
+* Install NODE ``` npm install```
+* Open MAMP/WAMP
+* Go to MyPhpAdmin```-> create new database```
+* Import the database inside Database folder
+* In the Terminal run ``` npm start```
+* In the Browser go ``` localhost:4000```
 
