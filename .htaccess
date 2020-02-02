@@ -1,0 +1,3 @@
+RewriteEngine On
+            RewriteCond %{HTTP_HOST} !^www.lekienlan.com$ [NC]
+            RewriteRule ^(.*)$ http://www.lekienlan.com/$1 [L,R=301]

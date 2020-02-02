@@ -6,6 +6,7 @@ const prefixer = require("autoprefixer");
 
 //include our image min library
 const imagemin = require("gulp-imagemin");
+const imageminMozjpeg = require("imagemin-mozjpeg");
 //define some common tasks for Gulp to run
 
 //like compile and minify SASS files:
@@ -23,8 +24,8 @@ function compile(done) {
 function squashImages(done) {
   gulp
     .src("./public/images/**")
-    .pipe(imagemin())
-    .pipe(gulp.dest("./minified/images"));
+    .pipe(imagemin([imageminMozjpeg()], { verbose: true }))
+    .pipe(gulp.dest("./public/minified_images"));
   done();
 }
 
