@@ -63,7 +63,7 @@
     return tool
       .map(
         (tool, index) =>
-          `<div class="tool col-5 col-md-4 col-lg-3 my-3 text-center">
+          `<div class="tool col-4 col-md-3 col-lg-2 my-3 text-center">
               <img src='images/tool_icons/${icon[index]}' class="tool-icon" style="width:50px"></img>
               <p class="my-1 tool-name">${tool}</p>
           </div> `
@@ -85,7 +85,7 @@
 
   //close lightbox function
   closeLightbox.forEach(close => {
-    close.addEventListener("click", function() {
+    close.addEventListener("click", function () {
       modal.classList.remove("show");
     });
   });
