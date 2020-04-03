@@ -8,6 +8,15 @@ header {
   z-index: 2;
 }
 
+.resume{
+  background: $blue;
+  border: none;
+
+  &:hover{
+    color: $yellow;
+  }
+}
+
 .navbar-toggler {
   border: none;
 }

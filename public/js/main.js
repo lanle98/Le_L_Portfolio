@@ -56,6 +56,7 @@
     img3.src = content.image_3;
     paragraph1.innerHTML = content.paragraph_1;
     paragraph2.innerHTML = content.paragraph_2;
+    paragraph3.innerHTML = content.paragraph_3;
     tool.innerHTML = `${splitTool(content.tool_name, content.tool_icon)}`;
   }
 
